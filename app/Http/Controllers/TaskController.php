@@ -12,9 +12,14 @@ class TaskController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    /**
+     * タスク一覧
+     *
+     * @return Task[]
+     */
     public function index()
     {
-        //
+        return Task::all();
     }
 
     /**
